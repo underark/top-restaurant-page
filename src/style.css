@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 :root {
     --bground-color: #f56f42;
     --content-color: #6b544c;
+    --button-color: #f2dd63;
 }
 
 body {
@@ -73,12 +74,48 @@ header {
     margin-bottom: 5rem;
 }
 
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
 #content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--content-color);
     height: 60vh;
     width: 100vw;
+    background-color: var(--content-color);
+}
+
+#content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 100%;
+}
+
+#content img {
+    object-fit: contain;
+}
+
+.content-section {
+    height: 60%;
+    display: flex;
+    gap: 20rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 6rem;
+    background-color: var(--button-color);
+    border: transparent;
+    padding: 1rem;
+    font-weight: bold;
 }
